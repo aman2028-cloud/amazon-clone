@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const DB = process.env.DATABASE;
+const DB = "mongodb+srv://new_user:aman_2020@cluster0.hhcpx.mongodb.net/";
 
 mongoose.connect(DB,{
     useUnifiedTopology:true,
