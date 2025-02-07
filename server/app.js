@@ -4,6 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const cors=require("cors");
 const port = process.env.PORT || 5007;
+// const url='https://amazon-6-qgg9.onrender.com'
 const cookieParser = require("cookie-parser");
 const DefaultData = require("./defaultdata");
 require("./db/conn");
@@ -14,7 +15,7 @@ const path =require("path");
 
 
 const corsOptions ={
-    origin:"https://amazon-5-ae5p.onrender.com/",
+    origin:"https://amazon-6-qgg9.onrender.com",
     credentials:true
 }
 
