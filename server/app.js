@@ -15,7 +15,7 @@ const path =require("path");
 
 
 const corsOptions ={
-    origin:"https://amazon-6-qgg9.onrender.com",
+    origin:"https://amazon-bhhg.onrender.com/",
     credentials:true
 }
 
