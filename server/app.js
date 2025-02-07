@@ -2,6 +2,7 @@ require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const cors=require("cors");
 const port = process.env.PORT || 5007;
 const cookieParser = require("cookie-parser");
 const DefaultData = require("./defaultdata");
@@ -12,6 +13,12 @@ const jwt = require("jsonwebtoken");
 const path =require("path");
 
 
+const corsOptions ={
+    origin:"https://amazon-5-ae5p.onrender.com/",
+    credentials:true
+}
+
+app.use(cors(corsOptions));
 // middleware
 app.use(express.json());
 app.use(cookieParser(""));
